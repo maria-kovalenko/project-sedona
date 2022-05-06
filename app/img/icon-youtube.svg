@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.001" height="14" viewBox="0 0 20.001 14">
+  <g id="icon-youtube.svg" transform="translate(-202 -3482)">
+    <g id="icon-youtube.svg-2" data-name="icon-youtube.svg" transform="translate(202 3482)">
+      <path id="Контур_20" data-name="Контур 20" d="M17.163,0H2.838A2.842,2.842,0,0,0,0,2.832v8.337A2.842,2.842,0,0,0,2.838,14H17.163A2.842,2.842,0,0,0,20,11.169V2.832A2.842,2.842,0,0,0,17.163,0ZM7.044,10.381V3.619L13.82,7Z"/>
+    </g>
+    <path id="Color_Overlay" data-name="Color Overlay" d="M204.838,3496a2.843,2.843,0,0,1-2.839-2.832v-8.337a2.842,2.842,0,0,1,2.839-2.831h14.325a2.842,2.842,0,0,1,2.837,2.831v8.337a2.842,2.842,0,0,1-2.837,2.832Zm4.206-3.619L215.82,3489l-6.776-3.38Z" fill="#fff"/>
+  </g>
+</svg>
