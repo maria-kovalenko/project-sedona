@@ -7,9 +7,3 @@ buttonClose.addEventListener("click", function () {
   buttonClose.classList.add("page-header__toggle--opened");
   menu.classList.add("main-nav-opened");
 });
-
-buttonOpen.addEventListener("click", function () {
-  buttonOpen.classList.remove("page-header__toggle--opened");
-  buttonOpen.classList.add("page-header__toggle--closed");
-  menu.classList.remove("main-nav-opened");
-});
