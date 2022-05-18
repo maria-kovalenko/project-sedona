@@ -15,7 +15,7 @@ const browserSync = require("browser-sync").create();
 
 function styles() {
   return gulp
-    .src("./app/css/sass/*.scss") // Выбираем источник: "app/sass/main.sass"
+    .src("./app/css/sass/**/*.scss") // Выбираем источник: "app/sass/main.sass"
     .pipe(sass().on("error", sass.logError)) // Преобразуем значение переменной "preprocessor" в функцию
     .pipe(
       autoprefixer({ overrideBrowserslist: ["last 10 versions"], grid: true })
