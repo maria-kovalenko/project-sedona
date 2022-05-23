@@ -15,7 +15,7 @@ const browserSync = require("browser-sync").create();
 
 function styles() {
   return gulp
-    .src("./app/css/sass/**/*.scss") // Выбираем источник: "app/sass/main.sass"
+    .src("./app/styles/sass/**/*.*") // Выбираем источник: "app/sass/main.sass"
     .pipe(sass().on("error", sass.logError)) // Преобразуем значение переменной "preprocessor" в функцию
     .pipe(
       autoprefixer({ overrideBrowserslist: ["last 10 versions"], grid: true })
@@ -23,7 +23,7 @@ function styles() {
     .pipe(
       cleancss({ level: { 1: { specialComments: 0 } }, format: "beautify" })
     ) // Минифицируем стили
-    .pipe(gulp.dest("./app/css")) // Выгрузим результат в папку "app/css/"
+    .pipe(gulp.dest("./app/styles/css")) // Выгрузим результат в папку "app/css/"
     .pipe(browserSync.stream());
 }
 
@@ -35,7 +35,7 @@ function watch() {
     online: true, // Режим работы: true или false
   });
   // Мониторим файлы препроцессора на изменения
-  gulp.watch("./app/css/sass/*.scss", styles);
+  gulp.watch("./app/styles/sass/**/*.*", styles);
   gulp.watch("./app/*.html").on("change", browserSync.reload);
 }
 

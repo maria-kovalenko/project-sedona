@@ -5,22 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sedona</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/reviews/style_review.scss"/>
+    <link rel="stylesheet" href="./styles/css/style.css" />
+    <link rel="stylesheet" href="./styles/css/review/style_review.css" />
   </head>
 
   <body>
-    <header class="page-header ">
+    <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="#">Фото и видео</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a href="#">Форма отзыва</a>
             </li>
             <li class="site-list__item">
@@ -59,17 +59,174 @@
       </div>
     </header>
 
-    <section class="intro">
-      <div class="intro__image-wrapper"></div>
-      <div class="intro__wrapper">
-        <b class="intro__slogan"> Оставьте свой отзыв </b>
-        <p class="intro__reasons">
-          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
-          посещенных вами достопримечательностях
-        </p>
-      </div>
-    </section>
+    <main class="page-main">
+      <section class="intro">
+        <div class="intro__image-wrapper intro__position-size-mob">
+          <!-- <img src="./img/bg-image-intro/intro-triangle.svg" alt="" class="intro__triangle"> -->
+          <div class="intro-sedona">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./img/bg-image-intro/sedona-desktop.png"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/bg-image-intro/sedona-tablet.png"
+              />
+              <img
+                class=""
+                src="./img/bg-image-intro/sedona-mobile.png"
+                alt="Седона"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="intro__wrapper lh-24">
+          <b class="intro__slogan"> Оставьте свой отзыв </b>
+          <p class="intro__reasons">
+            Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+            посещенных вами достопримечательностях
+          </p>
+        </div>
+      </section>
 
+      <section class="name paddinglr">
+        <form class="name__form title">
+          <p class="title__name">Представьтесь:</p>
+
+          <label for="name">Имя*:</label>
+          <input id="name" type="text" name="name" placeholder="Петр" /> <br />
+
+          <label for="surname">Фамилия*:</label>
+          <input
+            id="surname"
+            type="text"
+            name="surname"
+            placeholder="Иванов"
+          /><br />
+
+          <label for="patronymic">Отчество:</label>
+          <input
+            id="patronymic"
+            type="text"
+            name="patronymic"
+            placeholder="Александрович"
+          /><br />
+        </form>
+      </section>
+
+      <section class="contacts paddinglr">
+        <form class="contacts__form title">
+          <p class="title__name">Контактная информация:</p>
+
+          <label for="number">Контактный телефон*:</label><br />
+          <input
+            id="number"
+            type="tel"
+            name="number"
+            placeholder="Введите телефон"
+          /><br />
+
+          <label for="email">Электронная почта*:</label><br />
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Введите e-mail"
+          /><br />
+        </form>
+      </section>
+
+      <section class="impressions paddinglr">
+        <form class="impressions__form title">
+          <p class="title__name">Ваше Общее впечатление:</p>
+
+          <input
+            id="impression1"
+            type="radio"
+            name="impression"
+            value="positive"
+          />
+          <label for="impression1">Скорее положительное</label>
+          <br />
+
+          <input
+            id="impression2"
+            type="radio"
+            name="impression"
+            value="negative"
+          />
+          <label for="impression2">Скорее отрицательное</label>
+          <br />
+
+          <input
+            id="impression3"
+            type="radio"
+            name="impression"
+            value="no-answer"
+          />
+          <label for="impression3">Затрудняюсь ответить</label>
+          <br />
+        </form>
+      </section>
+
+      <section class="attractions paddinglr">
+        <form class="attractions__form title">
+          <p class="title__name">посещенные достопримечательности:</p>
+
+          <input
+            id="attractions1"
+            type="checkbox"
+            name="attractions1"
+            value="bridge"
+          />
+          <label for="attractions1">Мост Дьявола</label>
+          <br />
+
+          <input
+            id="attractions2"
+            type="checkbox"
+            name="attractions2"
+            value="mountain"
+          />
+          <label for="attractions2">Гора-Колокол</label>
+          <br />
+
+          <input
+            id="attractions3"
+            type="checkbox"
+            name="attractions3"
+            value="slide-park"
+          />
+          <label for="attractions3">Слайд-парк</label>
+          <br />
+
+          <input
+            id="attractions4"
+            type="checkbox"
+            name="attractions4"
+            value="red-rocks"
+          />
+          <label for="attractions4">Красные скалы</label>
+          <br />
+        </form>
+      </section>
+
+      <section class="emotions paddinglr">
+        <form class="emotions__form title">
+          <p class="title__name">Опишите свои эмоции:</p>
+
+          <textarea
+            rows="10"
+            cols="36"
+            name="text"
+            placeholder="Опишите подробно все свои восторги"
+          >
+          </textarea>
+        </form>
+      </section>
+      <input class="button btn-review" type="submit" value="Отправить отзыв" />
+    </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__hashtag hashtag">

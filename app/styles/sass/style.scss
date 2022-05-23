@@ -1,4 +1,4 @@
-//---------------------------  blocks/basic.less -------------------------
+//---------------------------  blocks/basic.scss -------------------------
 @font-face {
   font-family: "PT Sans";
   src: url(/app/fonts/PTSans-Regular.ttf);
@@ -63,7 +63,7 @@ a {
   overflow: hidden;
 }
 
-//---------------------------  blocks/page-header.less -------------------------
+//---------------------------  blocks/page-header.scss -------------------------
 
 .page-header {
   display: flex;
@@ -180,7 +180,7 @@ a {
   }
 }
 
-//---------------------------  blocks/main-nav.less -------------------------
+//---------------------------  blocks/main-nav.scss -------------------------
 .page-main {
   background-color: white;
 }
@@ -240,7 +240,7 @@ a {
   }
 }
 
-//---------------------------  blocks/site-list.less -------------------------
+//---------------------------  blocks/site-list.scss -------------------------
 
 .site-list__item {
   font-weight: bold;
@@ -335,20 +335,20 @@ a {
   }
 }
 
-//---------------------------  blocks/intro.less -------------------------
+//---------------------------  blocks/intro.scss -------------------------
 
 .intro__image-wrapper {
   margin-top: -27px;
   height: 389px;
 
   background-color: #e5f2fa;
-  background-image: url(../img/bg-image-intro/bg-image-intro.jpg);
+  background-image: url(../../img/bg-image-intro/bg-image-intro.jpg);
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url(../img/bg-image-intro/bg-image-intro@2x.jpg);
+    background-image: url(../../img/bg-image-intro/bg-image-intro@2x.jpg);
   }
 }
 
@@ -408,7 +408,7 @@ a {
   }
 }
 
-//---------------------------  blocks/content-top.less -------------------------
+//---------------------------  blocks/content-top.scss -------------------------
 
 .content-top__habitation {
   position: relative;
@@ -569,7 +569,7 @@ a {
     top: -10px;
     left: 0;
 
-    background-image: url(../img/icon-house.svg);
+    background-image: url(../../img/icon-house.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -584,7 +584,7 @@ a {
     top: -10px;
     left: 0;
 
-    background-image: url(../img/icon-souvenirs.svg);
+    background-image: url(../../img/icon-souvenirs.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -599,7 +599,7 @@ a {
     top: -10px;
     left: 0;
 
-    background-image: url(../img/icon-eat.svg);
+    background-image: url(../../img/icon-eat.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -664,7 +664,7 @@ a {
     margin-bottom: 10px;
   }
 }
-//---------------------------  blocks/content-bottom.less -------------------------
+//---------------------------  blocks/content-bottom.scss -------------------------
 
 .content-bottom__bridge {
   background-color: $bg-blue;
@@ -911,7 +911,7 @@ a {
   }
 }
 
-//---------------------------  blocks/hotel-search.less -------------------------
+//---------------------------  blocks/hotel-search.scss -------------------------
 
 .hotel-search__wrapper {
   padding: 0 6.25%;
@@ -985,7 +985,7 @@ a {
   }
 }
 
-//---------------------------  blocks/page-footer.less -------------------------
+//---------------------------  blocks/page-footer.scss -------------------------
 
 .page-footer {
   width: 100%;
@@ -1057,7 +1057,7 @@ a {
   }
 }
 
-//---------------------------  blocks/social__list.less -------------------------
+//---------------------------  blocks/social__list.scss -------------------------
 
 .social__list {
   display: flex;
@@ -1106,7 +1106,7 @@ a {
   }
 }
 
-//---------------------------  blocks/copyright.less -------------------------
+//---------------------------  blocks/copyright.scss -------------------------
 
 .copyright__link {
   margin-left: 10px;
@@ -1129,7 +1129,4 @@ a {
 
 .copyright__text {
   margin: 0;
-}
-
-@media (min-width: $tablet-width) {
 }
