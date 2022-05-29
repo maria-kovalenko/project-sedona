@@ -82,7 +82,7 @@
           </div>
         </div>
         <div class="intro__wrapper lh-24">
-          <b class="intro__slogan"> Оставьте свой отзыв </b>
+          <b class="intro__slogan fs-30"> Оставьте свой отзыв </b>
           <p class="intro__reasons">
             Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
             посещенных вами достопримечательностях
@@ -90,58 +90,69 @@
         </div>
       </section>
 
-      <section class="name paddinglr">
-        <form class="name__form title">
+      <form class="feedback paddinglr" action="#" method="post">
+        <section class="feedback__personality title">
           <p class="title__name">Представьтесь:</p>
+          <div class="feedback__personality__wrapper">
+            <label for="name">Имя*:</label>
+            <input
+              class="feedback__personality__input"
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Петр"
+            />
+          </div>
+          <div class="feedback__personality__wrapper">
+            <label for="surname">Фамилия*:</label>
+            <input
+              class="feedback__personality__input"
+              id="surname"
+              type="text"
+              name="surname"
+              placeholder="Иванов"
+            />
+          </div>
+          <div class="feedback__personality__wrapper">
+            <label for="patronymic">Отчество:</label>
+            <input
+              class="feedback__personality__input"
+              id="patronymic"
+              type="text"
+              name="patronymic"
+              placeholder="Александрович"
+            />
+          </div>
+        </section>
 
-          <label for="name">Имя*:</label>
-          <input id="name" type="text" name="name" placeholder="Петр" /> <br />
-
-          <label for="surname">Фамилия*:</label>
-          <input
-            id="surname"
-            type="text"
-            name="surname"
-            placeholder="Иванов"
-          /><br />
-
-          <label for="patronymic">Отчество:</label>
-          <input
-            id="patronymic"
-            type="text"
-            name="patronymic"
-            placeholder="Александрович"
-          /><br />
-        </form>
-      </section>
-
-      <section class="contacts paddinglr">
-        <form class="contacts__form title">
+        <section class="feedback__contacts title">
           <p class="title__name">Контактная информация:</p>
+          <div class="feedback__contacts__wrapper">
+            <label for="number">Контактный телефон*:</label>
+            <input
+              class="feedback__contacts__input feedback__contacts__input--tel"
+              id="number"
+              type="tel"
+              name="number"
+              placeholder="Введите телефон"
+            />
+          </div>
+          <div class="feedback__contacts__wrapper">
+            <label for="email">Электронная почта*:</label>
+            <input
+              class="feedback__contacts__input feedback__contacts__input--email"
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Введите e-mail"
+            />
+          </div>
+        </section>
 
-          <label for="number">Контактный телефон*:</label><br />
-          <input
-            id="number"
-            type="tel"
-            name="number"
-            placeholder="Введите телефон"
-          /><br />
-
-          <label for="email">Электронная почта*:</label><br />
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Введите e-mail"
-          /><br />
-        </form>
-      </section>
-
-      <section class="impressions paddinglr">
-        <form class="impressions__form title">
+        <section class="feedback__impressions title">
           <p class="title__name">Ваше Общее впечатление:</p>
-
           <input
+            checked
             id="impression1"
             type="radio"
             name="impression"
@@ -149,7 +160,6 @@
           />
           <label for="impression1">Скорее положительное</label>
           <br />
-
           <input
             id="impression2"
             type="radio"
@@ -158,7 +168,6 @@
           />
           <label for="impression2">Скорее отрицательное</label>
           <br />
-
           <input
             id="impression3"
             type="radio"
@@ -167,11 +176,9 @@
           />
           <label for="impression3">Затрудняюсь ответить</label>
           <br />
-        </form>
-      </section>
+        </section>
 
-      <section class="attractions paddinglr">
-        <form class="attractions__form title">
+        <section class="feedback__attractions title">
           <p class="title__name">посещенные достопримечательности:</p>
 
           <input
@@ -209,26 +216,28 @@
           />
           <label for="attractions4">Красные скалы</label>
           <br />
-        </form>
-      </section>
+        </section>
 
-      <section class="emotions paddinglr">
-        <form class="emotions__form title">
+        <section class="feedback__emotions title">
           <p class="title__name">Опишите свои эмоции:</p>
 
           <textarea
+            class="feedback__emotions__description"
             rows="10"
-            cols="36"
+            cols="37"
             name="text"
             placeholder="Опишите подробно все свои восторги"
-          >
-          </textarea>
-        </form>
-      </section>
-      <input class="button btn-review" type="submit" value="Отправить отзыв" />
+          ></textarea>
+        </section>
+        <input
+          class="button btn-review"
+          type="submit"
+          value="Отправить отзыв"
+        />
+      </form>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper pt-65">
         <div class="page-footer__hashtag hashtag">
           <b class="hashtag__text">#VISITCEDONA</b>
         </div>

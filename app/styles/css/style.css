@@ -27,12 +27,15 @@ a {
 }
 .button {
   display: block;
+  margin-bottom: 10px;
+  margin-right: 10px;
   text-align: center;
-  padding: 15px 46px;
+  padding: 18px 20px;
   background-color: #81b3d2;
   color: #fff;
-  font-size: 18px;
-  font-weight: 700
+  font-size: 21px;
+  font-weight: 700;
+  border: none
 }
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
@@ -154,7 +157,7 @@ a {
   background-color: #fff
 }
 .main-nav {
-  display: none;
+  display: block;
   width: 100%
 }
 .main-nav-opened {
@@ -221,7 +224,7 @@ a {
 .site-list__item a {
   display: block;
   text-align: center;
-  padding: 18px 70px;
+  padding: 15px 70px;
   color: #fff;
   font-size: 18px
 }
@@ -246,7 +249,6 @@ a {
   }
   .site-list__item a {
     font-size: 14px;
-    line-height: 24px;
     padding: 15px 15px;
     color: #000
   }
@@ -306,7 +308,7 @@ a {
 }
 .intro__slogan {
   display: block;
-  margin-bottom: 33px;
+  margin-bottom: 28px;
   font-size: 18px;
   font-weight: 700
 }
@@ -780,8 +782,7 @@ a {
   display: none
 }
 .hotel-search__button {
-  margin-top: 40px;
-  font-size: 21px
+  margin-top: 40px
 }
 .hotel-search__button:hover {
   background-color: #669ec0
@@ -834,7 +835,7 @@ a {
 .page-footer__hashtag {
   min-width: 140px;
   margin: 0 auto;
-  margin-bottom: 40px
+  margin-bottom: 33px
 }
 .page-footer__hashtag {
   font-size: 21px
@@ -903,7 +904,7 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 40px
+  margin-bottom: 37px
 }
 .social__item {
   text-align: center;
