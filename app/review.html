@@ -93,137 +93,150 @@
       <form class="feedback paddinglr" action="#" method="post">
         <section class="feedback__personality title">
           <p class="title__name">Представьтесь:</p>
-          <div class="feedback__personality__wrapper">
-            <label for="name">Имя*:</label>
-            <input
-              class="feedback__personality__input"
-              id="name"
-              type="text"
-              name="name"
-              placeholder="Петр"
-            />
-          </div>
-          <div class="feedback__personality__wrapper">
-            <label for="surname">Фамилия*:</label>
-            <input
-              class="feedback__personality__input"
-              id="surname"
-              type="text"
-              name="surname"
-              placeholder="Иванов"
-            />
-          </div>
-          <div class="feedback__personality__wrapper">
-            <label for="patronymic">Отчество:</label>
-            <input
-              class="feedback__personality__input"
-              id="patronymic"
-              type="text"
-              name="patronymic"
-              placeholder="Александрович"
-            />
+          <div class="feedback__personality__wrapper-external">
+            <div class="feedback__personality__wrapper">
+              <label for="name">Имя*:</label>
+              <input
+                class="feedback__personality__input"
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Петр"
+              />
+            </div>
+            <div class="feedback__personality__wrapper">
+              <label for="surname">Фамилия*:</label>
+              <input
+                class="feedback__personality__input"
+                id="surname"
+                type="text"
+                name="surname"
+                placeholder="Иванов"
+              />
+            </div>
+            <div class="feedback__personality__wrapper">
+              <label for="patronymic">Отчество:</label>
+              <input
+                class="feedback__personality__input"
+                id="patronymic"
+                type="text"
+                name="patronymic"
+                placeholder="Александрович"
+              />
+            </div>
           </div>
         </section>
 
         <section class="feedback__contacts title">
           <p class="title__name">Контактная информация:</p>
-          <div class="feedback__contacts__wrapper">
-            <label for="number">Контактный телефон*:</label>
-            <input
-              class="feedback__contacts__input feedback__contacts__input--tel"
-              id="number"
-              type="tel"
-              name="number"
-              placeholder="Введите телефон"
-            />
-          </div>
-          <div class="feedback__contacts__wrapper">
-            <label for="email">Электронная почта*:</label>
-            <input
-              class="feedback__contacts__input feedback__contacts__input--email"
-              id="email"
-              type="email"
-              name="email"
-              placeholder="Введите e-mail"
-            />
+          <div class="feedback__contacts__wrapper-external">
+            <div class="feedback__contacts__wrapper">
+              <label for="number"><span>Контактный</span> телефон*:</label>
+              <input
+                class="feedback__contacts__input feedback__contacts__input--tel"
+                id="number"
+                type="tel"
+                name="number"
+                placeholder="Введите телефон"
+              />
+            </div>
+            <div class="feedback__contacts__wrapper">
+              <label for="email">Электронная почта*:</label>
+              <input
+                class="feedback__contacts__input feedback__contacts__input--email"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Введите e-mail"
+              />
+            </div>
           </div>
         </section>
 
         <section class="feedback__impressions title">
           <p class="title__name">Ваше Общее впечатление:</p>
-          <input
-            checked
-            id="impression1"
-            type="radio"
-            name="impression"
-            value="positive"
-          />
-          <label for="impression1">Скорее положительное</label>
-          <br />
-          <input
-            id="impression2"
-            type="radio"
-            name="impression"
-            value="negative"
-          />
-          <label for="impression2">Скорее отрицательное</label>
-          <br />
-          <input
-            id="impression3"
-            type="radio"
-            name="impression"
-            value="no-answer"
-          />
-          <label for="impression3">Затрудняюсь ответить</label>
-          <br />
+          <div class="feedback__impressions__wrapper">
+            <input
+              checked
+              id="impression1"
+              type="radio"
+              name="impression"
+              value="positive"
+            />
+            <label for="impression1">Скорее положительное</label>
+            <br />
+            <input
+              id="impression2"
+              type="radio"
+              name="impression"
+              value="negative"
+            />
+            <label for="impression2">Скорее отрицательное</label>
+            <br />
+            <input
+              id="impression3"
+              type="radio"
+              name="impression"
+              value="no-answer"
+            />
+            <label for="impression3">Затрудняюсь ответить</label>
+            <br />
+          </div>
         </section>
 
         <section class="feedback__attractions title">
           <p class="title__name">посещенные достопримечательности:</p>
+          <div class="feedback__attractions__wrapper-external">
+            <div class="feedback__attractions__wrapper">
+              <input
+                id="attractions1"
+                type="checkbox"
+                name="attractions1"
+                value="bridge"
+              />
+              <label for="attractions1">Мост Дьявола</label>
+              <br />
+            </div>
+            
 
-          <input
-            id="attractions1"
-            type="checkbox"
-            name="attractions1"
-            value="bridge"
-          />
-          <label for="attractions1">Мост Дьявола</label>
-          <br />
-
-          <input
-            id="attractions2"
-            type="checkbox"
-            name="attractions2"
-            value="mountain"
-          />
-          <label for="attractions2">Гора-Колокол</label>
-          <br />
-
-          <input
-            id="attractions3"
-            type="checkbox"
-            name="attractions3"
-            value="slide-park"
-          />
-          <label for="attractions3">Слайд-парк</label>
-          <br />
-
-          <input
-            id="attractions4"
-            type="checkbox"
-            name="attractions4"
-            value="red-rocks"
-          />
-          <label for="attractions4">Красные скалы</label>
-          <br />
+            <div class="feedback__attractions__wrapper">
+              <input
+                id="attractions2"
+                type="checkbox"
+                name="attractions2"
+                value="mountain"
+              />
+              <label for="attractions2">Гора-Колокол</label>
+              <br />
+            </div>
+            <div class="feedback__attractions__wrapper">
+              <input
+                id="attractions3"
+                type="checkbox"
+                name="attractions3"
+                value="slide-park"
+              />
+              <label for="attractions3">Слайд-парк</label>
+              <br />
+            </div>
+            <div class="feedback__attractions__wrapper">
+              <input
+                id="attractions4"
+                type="checkbox"
+                name="attractions4"
+                value="red-rocks"
+              />
+              <label for="attractions4">Красные скалы</label>
+              <br />
+            </div>
+          </div>
         </section>
 
         <section class="feedback__emotions title">
           <p class="title__name">Опишите свои эмоции:</p>
-
           <textarea
             class="feedback__emotions__description"
-            rows="10"
+            rows="8"
             cols="37"
             name="text"
             placeholder="Опишите подробно все свои восторги"
@@ -234,6 +247,9 @@
           type="submit"
           value="Отправить отзыв"
         />
+        <div class="feedback__required-wrapper">
+          <p class="feedback__required">* — обязательные поля</p>
+        </div>
       </form>
     </main>
     <footer class="page-footer">
