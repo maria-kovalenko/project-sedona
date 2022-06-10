@@ -157,7 +157,7 @@ a {
   background-color: #fff
 }
 .main-nav {
-  display: block;
+  display: none;
   width: 100%
 }
 .main-nav-opened {
