@@ -537,12 +537,8 @@ input::placeholder {
 .btn-review {
   width: 100%;
   display: inline-block;
-  border: none;
-  cursor: pointer;
 }
-.btn-review[value] {
-  text-transform: uppercase;
-}
+
 .btn-review:hover {
   background-color: #669ec0;
 }
@@ -550,7 +546,7 @@ input::placeholder {
   background-color: #5496bd;
 }
 @media (min-width: 768px) {
-  .feedback__button {
+  .feedback__emotions__button {
     grid-area: button;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
