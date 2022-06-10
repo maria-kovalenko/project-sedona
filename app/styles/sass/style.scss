@@ -39,6 +39,10 @@ a {
   text-decoration: none;
 }
 
+input {
+  border-radius: 0;
+}
+
 .button {
   display: block;
   margin-bottom: 10px;
@@ -50,6 +54,8 @@ a {
   font-size: 21px;
   font-weight: bold;
   border: none;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -300,7 +306,6 @@ a {
 
   .site-list__item a {
     font-size: 14px;
-    // line-height: 24px;
     padding: 15px 15px;
 
     color: #000;

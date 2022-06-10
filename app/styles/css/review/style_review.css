@@ -492,7 +492,8 @@ input::placeholder {
   width: 100%;
   padding: 15px;
   background-color: #eee;
-  border: none
+  border: none;
+  border-radius: 0
 }
 .feedback__emotions__description::-webkit-input-placeholder {
   font-size: 18px;
@@ -533,21 +534,10 @@ input::placeholder {
 }
 .btn-review {
   width: 100%;
-  display: inline-block;
-  border: none;
-  cursor: pointer
-}
-.btn-review[value] {
-  text-transform: uppercase
-}
-.btn-review:hover {
-  background-color: #669ec0
-}
-.btn-review:active {
-  background-color: #5496bd
+  display: inline-block
 }
 @media (min-width:768px) {
-  .feedback__button {
+  .feedback__emotions__button {
     grid-area: button;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -586,7 +576,7 @@ input::placeholder {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2
   }
-  .feedback__button {
+  .feedback__emotions__button {
     -ms-grid-row: 5;
     -ms-grid-column: 1
   }

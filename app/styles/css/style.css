@@ -25,6 +25,9 @@ img {
 a {
   text-decoration: none
 }
+input {
+  border-radius: 0
+}
 .button {
   display: block;
   margin-bottom: 10px;
@@ -35,7 +38,9 @@ a {
   color: #fff;
   font-size: 21px;
   font-weight: 700;
-  border: none
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer
 }
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
