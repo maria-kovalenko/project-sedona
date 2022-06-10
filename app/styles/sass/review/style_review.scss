@@ -29,7 +29,6 @@ $desktop-width: 1200px;
     url(../../../img/bg-image-intro/intro-triangle.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: center center, center center;
-  // background-size: ;
   margin-bottom: 39px;
 }
 
@@ -120,7 +119,7 @@ $desktop-width: 1200px;
     top: 50%;
     left: 0;
     width: 19%;
-    height: 2px;
+    height: 1px;
     background-color: #dbdbdb;
   }
 
@@ -131,7 +130,7 @@ $desktop-width: 1200px;
     top: 50%;
     right: 0;
     width: 19%;
-    height: 2px;
+    height: 1px;
     background-color: #dbdbdb;
   }
 }
@@ -144,7 +143,7 @@ $desktop-width: 1200px;
     top: 50%;
     left: 0;
     width: 29%;
-    height: 2px;
+    height: 1px;
     background-color: #dbdbdb;
   }
 
@@ -155,7 +154,7 @@ $desktop-width: 1200px;
     top: 50%;
     right: 0;
     width: 29%;
-    height: 2px;
+    height: 1px;
     background-color: #dbdbdb;
   }
 }
@@ -344,8 +343,19 @@ input::placeholder {
 
 @media (min-width: $tablet-width) {
   .feedback__impressions {
+    position: relative;
     grid-area: impressions;
     margin-bottom: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1px;
+      height: 95%;
+      background-color: #dbdbdb;
+    }
   }
 
   .feedback__impressions .title {
