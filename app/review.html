@@ -91,8 +91,8 @@
       </section>
 
       <form class="feedback paddinglr" action="#" method="post">
-        <section class="feedback__personality title">
-          <p class="title__name">Представьтесь:</p>
+        <section class="feedback__personality">
+          <p class="title">Представьтесь:</p>
           <div class="feedback__personality__wrapper-external">
             <div class="feedback__personality__wrapper">
               <label for="name">Имя*:</label>
@@ -127,34 +127,36 @@
           </div>
         </section>
 
-        <section class="feedback__contacts title">
-          <p class="title__name">Контактная информация:</p>
+        <section class="feedback__contacts">
+          <p class="title pseudo">Контактная информация:</p>
           <div class="feedback__contacts__wrapper-external">
             <div class="feedback__contacts__wrapper">
               <label for="number"><span>Контактный</span> телефон*:</label>
-              <input
-                class="feedback__contacts__input feedback__contacts__input--tel"
-                id="number"
-                type="tel"
-                name="number"
-                placeholder="Введите телефон"
-              />
+              <div class="wrapper-input wrapper-input--tel">
+                <input
+                  id="number"
+                  type="tel"
+                  name="number"
+                  placeholder="Введите телефон"
+                />
+              </div>
             </div>
             <div class="feedback__contacts__wrapper">
               <label for="email">Электронная почта*:</label>
-              <input
-                class="feedback__contacts__input feedback__contacts__input--email"
-                id="email"
-                type="email"
-                name="email"
-                placeholder="Введите e-mail"
-              />
+              <div class="wrapper-input wrapper-input--email">
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Введите e-mail"
+                />
+              </div>
             </div>
           </div>
         </section>
 
-        <section class="feedback__impressions title">
-          <p class="title__name">Ваше Общее впечатление:</p>
+        <section class="feedback__impressions">
+          <p class="title">Ваше Общее впечатление:</p>
           <div class="feedback__impressions__wrapper">
             <input
               checked
@@ -184,8 +186,11 @@
           </div>
         </section>
 
-        <section class="feedback__attractions title">
-          <p class="title__name">посещенные достопримечательности:</p>
+        <section class="feedback__attractions">
+          <p class="title pseudo">
+            посещенные<br />
+            достопримечательности:
+          </p>
           <div class="feedback__attractions__wrapper-external">
             <div class="feedback__attractions__wrapper">
               <input
@@ -197,7 +202,6 @@
               <label for="attractions1">Мост Дьявола</label>
               <br />
             </div>
-            
 
             <div class="feedback__attractions__wrapper">
               <input
@@ -232,8 +236,8 @@
           </div>
         </section>
 
-        <section class="feedback__emotions title">
-          <p class="title__name">Опишите свои эмоции:</p>
+        <section class="feedback__emotions">
+          <p class="title pseudo">Опишите свои эмоции:</p>
           <textarea
             class="feedback__emotions__description"
             rows="8"
@@ -247,6 +251,7 @@
           type="submit"
           value="Отправить отзыв"
         />
+
         <div class="feedback__required-wrapper">
           <p class="feedback__required">* — обязательные поля</p>
         </div>
