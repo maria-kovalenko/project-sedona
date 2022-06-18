@@ -229,7 +229,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  padding: 20px 78px 20px 20px;
+  padding: 20px 57px 20px 20px;
   background-color: #f2f2f2;
   border: none;
 }
@@ -240,26 +240,24 @@
 .wrapper-input--tel::before {
   content: "";
   position: absolute;
-  top: 1px;
-  right: 1px;
+  top: 0;
+  right: 0;
   width: 57px;
   height: 53px;
   background-image: url(../../../img/phone.svg);
   background-position: calc(100% - 20px) 50%;
   background-repeat: no-repeat;
-  background-color: #e6e6e6;
 }
 .wrapper-input--email::before {
   content: "";
   position: absolute;
-  top: 1px;
-  right: 1px;
+  top: 0;
+  right: 0;
   width: 57px;
   height: 53px;
   background-image: url(../../../img/icon-mail.svg);
   background-position: calc(100% - 20px) 50%;
   background-repeat: no-repeat;
-  background-color: #e6e6e6;
 }
 @media (min-width: 1200px) {
   .wrapper-input {
