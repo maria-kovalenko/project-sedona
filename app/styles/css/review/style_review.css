@@ -433,9 +433,6 @@ input::placeholder {
   top: 45%;
   left: 21px
 }
-.attractions input + label::before {
-  opacity: 1
-}
 @media (min-width:768px) {
   .attractions {
     grid-area: attractions;
